@@ -1,0 +1,172 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.shopTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+  }
+  .products {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    place-items: center;
+    grid-gap: 20px;
+
+    /* overflow: hidden; */
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 30%;
+    height: 250px;
+    margin: 90px 0;
+    text-align: center;
+
+
+  }
+  
+  .product img {
+    width: 70%;
+    height: 300px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    
+    
+  }
+  
+  .product .description {
+    text-align: center;
+    
+
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+
+  .contain{
+    box-shadow: 0px 6px 3px rgb(220, 220, 220);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .search {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .links a {
+    
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+  .search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .links a {
+    margin: 10px 0;
+  }
+  .product img {
+    width: 100%;
+}
+  }
+
+.product {
+  width: 100%;
+}
+
+.products {
+  display: grid;
+  
+}
+
+  
+@media (max-width: 992px) {
+  .search {
+    width: 80%;
+  }
+  .product {
+    width: 60%;
+  }
+  .product .description p{
+    font-size: 14px;
+  }
+  .product img {
+    width: 100%;
+}
+}
+
+@media (max-width: 600px) {
+  
+  .product {
+    width: 100%;
+  }
+  .product .description p{
+    font-size: 12px;
+  }
+
+  .search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .links {
+    justify-content: center;
+  }
+  .product img {
+    width: 100%;
+}
+}
+@media only screen and (max-width: 1200px) {
+  .product {
+    width: 100%;
+  }
+  
+}
