@@ -1,37 +1,135 @@
+.form-card{
+  font-family: "Karla", sans-serif;
+  background: url("https://hamart-shop.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.6aacd9de.png&w=640&q=75");
+  background-repeat: no-repeat;;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+   
+    
+}
 
+
+.sign-card{
+  font-family: "Karla", sans-serif;
+  background: rgb(85, 147, 246);
+
+    min-height: 100vh;
+}
+.sign-card h2{
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.form-card h2{
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.facebook {
+  background-color: #3b5998;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
   form {
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 100%;
+    padding: 2rem;
+    width: 120%;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+   
   }
-  
+  .forma .google{
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 9px;
+    display: inline-flex;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #ccc;
+    font-weight: 900;
+    font-family: Roboto, sans-serif;
+  }
+  .kep-login-facebook{
+color: blue;
+background: transparent;
+font-weight: 300;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px;
+background-color:#4c69ba;
+text-transform: lowercase;
+font-size: 18px;
+  }
+  .fa{
+    font-size: 30px;
+  }
+  .forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    
+    width: 120%;
+    max-width: 500px;
+    height: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: #FFFFFF;
+  }
+  input [placeholder='Enter Your Email'] {
+    float: left;
+    margin-right: 49px;
+    padding-right: 30px;
+  }
   input[type="email"],
+  input[type="text"],
+  
   input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    
+    color: #919aa3;
+    
   }
   
+  
   button[type="submit"] {
-    background-color: #4CAF50;
+    background: rgb(85, 147, 246);
+     width: 100%;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border: none;
-    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 17px;
     cursor: pointer;
     margin-bottom: 10px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px;
+
   }
   
   button[type="submit"]:hover {
-    background-color: #3e8e41;
+    background: rgb(19, 102, 235);
+
   }
   
   p {

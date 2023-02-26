@@ -24,11 +24,12 @@ export const PRODUCTS = [
         id: 1,
         productName: "iPhone 13 pro ",
         price: 500,
+        description: 'hafavdgljdhaoudgdd',
         productImage: product1,
     },
     {
         id: 2,
-        productName: "Gold Chain Crystal High Heels",
+        productName: "Gold Chain Heels",
         price: 30,
         productImage: product2,
     },
@@ -116,5 +117,34 @@ export const PRODUCTS = [
         price: 30,
         productImage: product16,
     },
-    
+    {
+        id: 17,
+        productName: "ffgf",
+        price: 56,
+        productImage: "https://cdn.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg"
+    },
+    {
+        id: 18,
+        productName: "ffgf",
+        price: 56,
+        productImage: "https://cdn.pixabay.com/photo/2020/05/26/07/43/skateboard-5221914__480.jpg"
+    },
+    {
+        id: 19,
+        productName: "ffgf",
+        price: 56,
+        productImage: "https://cdn.pixabay.com/photo/2016/03/27/22/05/necktie-1284463__480.jpg"
+    },
+    {
+        id: 20,
+        productName: "ffgf",
+        price: 56,
+        productImage: "https://cdn.pixabay.com/photo/2013/07/12/18/20/shoes-153310__480.png"
+    },
+    {
+        id: 21,
+        productName: "ffgf",
+        price: 56,
+        productImage: "https://cdn.pixabay.com/photo/2016/11/21/16/55/high-heels-1846436__480.jpg"
+    },
 ];

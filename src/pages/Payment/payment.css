@@ -1,73 +1,54 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
-  }
-  
-  h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #ccc;
-  }
-  
-  input[type="text"],
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #ccc;
-  }
-  
-  .monnify-logo {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #0054a6;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #003f81;
-  }
-  
-  p {
-    font-size: 14px;
-    color: red;
-    margin-top: 10px;
-  }
-  .payment-page {
-    background: #fffbfb;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .monnify-logo {
-    width: 200px;
-  margin-bottom: 20px;
-    margin-bottom: 20px;
-  }
-    
+.Payment-body{
+  background: linear-gradient(45deg, rgba(85, 147, 246) 0%, rgb(60, 130, 243));
+ min-height: 100vh;
+}
+.Payment-body h2{  
+
+  color: White;
+  text-align: center;
+}
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paymentForm label {
+  margin: 0.5rem 0;
+}
+
+.paymentForm input[type="text"],
+.paymentForm input[type="email"],
+.paymentForm input[type="tel"],
+.paymentForm input[type="number"] {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.paymentForm button[type="submit"] {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  background:rgb(85, 147, 246);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.paymentForm button[type="submit"]:hover {
+  background-color: rgb(25, 107, 240);
+}

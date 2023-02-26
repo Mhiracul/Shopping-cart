@@ -1,55 +1,42 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import './payment.css'
-import monnifyLogo from '../../assets/img/monnifyLogo.png';
+
 
 
 
 const PaymentPage = () => {
-  const [amount, setAmount] = useState(0);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState(false);
-
-
+  const handlePayment = async (event) => {
+    event.preventDefault();
+    
+    const response = await fetch('/payments', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        amount: 5000,
+        email: 'john@example.com',
+        phone: '08012345678',
+        fullName: 'John Doe'
+      })
+    });
   
-
-  const handleAmountChange = (e) => {
-    setAmount(e.target.value);
+    const { payment } = await response.json();
+    window.location.href = payment.paymentUrl;
   };
-
-  const handlePayment = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post("https://api.monnify.com/api/v1/bank-transfer/charge", {
-        amount,
-        apiKey: "YOUR_API_KEY",
-        reference: "YOUR_UNIQUE_REFERENCE",
-        currencyCode: "NGN",
-      });
-      setSuccess(true);
-    } catch (err) {
-      setError(err.message);
-    }
-  };
-
+  
   return (
-   
-        <div className="payment-page">
-      <img src={monnifyLogo} alt="Monnify logo" className="monnify-logo"/>
-      <h2>Payment Page</h2>
-      {error && <p>{error}</p>}
-      {success && <p>Payment Successful</p>}
-      <form onSubmit={handlePayment}>
-        <input
-          type="number"
-          placeholder="Enter amount"
-          value={amount}
-          onChange={handleAmountChange}
-        />
-        <button type="submit">Pay with Monnify</button>
-      </form>
+    <div className="Payment-body">
+      <h2>Payment page</h2>
+      
+    <form className="paymentForm" onSubmit={handlePayment}>
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="number" name="amount" placeholder="Amount" required />
+      <button type="submit">Pay</button>
+    </form>
     </div>
   );
-};
-
+  }  
 export default PaymentPage;
