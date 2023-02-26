@@ -1,0 +1,64 @@
+section.footer{
+    background-color: rgb(85, 147, 246);
+    padding: 40px 0;
+}
+
+.footer-parent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-footer{
+    width: 30%;
+}
+
+.logo-footer img{
+    height: 60px;
+    width: auto;
+}
+
+div.small-content{
+    color: white;
+    line-height: 27px;
+    margin: 20px 0;
+}
+
+.first-footer i{
+    margin: 20px 8px;
+}
+
+.fa-facebook, .fa-twitter{
+    color: blue
+}
+
+.fa-instagram{
+    color: rgb(255, 123, 0)
+}
+
+.fa-youtube{
+    color: red
+}
+
+.second-footer{
+    width: 30%;
+}
+
+.second-footer h4{
+    color: white;
+    margin-bottom: 50px;
+}
+
+
+.second-footer ul{
+    list-style-type: none;
+}
+
+.second-footer ul li{
+    color: white;
+    margin: 8px 0;
+}
+
+.second-footer > div{
+    display: flex;
+    justify-content: space-between;
+}
