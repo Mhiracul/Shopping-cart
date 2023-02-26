@@ -10,6 +10,9 @@ import { useEffect } from 'react'
 const Nav = ({user, setUser}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+  
+  
+    
  useEffect(() => {
   const handleResize = () => setWidth(window.innerWidth);
   window.addEventListener("resize", handleResize);
@@ -29,15 +32,15 @@ const Nav = ({user, setUser}) => {
      <div></div>
     <div className="links_me">
         <Link to="/"  style={{ textDecoration: 'none' }}>Shop</Link>
+
         <div className="account-dropdown">
-        <Link to="/"  style={{ textDecoration: 'none' }} onClick={() => setIsOpen(!isOpen)}>Account  <User size={20}  /></Link>
+        <button  style={{ textDecoration: 'none' }} onClick={() => setIsOpen(!isOpen)}>Account  <User size={20}  /></button>
         {isOpen && (
           <div className="account-dropdown-content">
             
            <li> <Link to= "/account" style={{ textDecoration: 'none' }}>Login</Link></li>
            <li> <Link to= "/signUp" style={{ textDecoration: 'none' }}>Sign Up</Link></li>
           <li>  <Link to= "/Payment" style={{ textDecoration: 'none' }}>Payment</Link> </li>
-         <li>  <Link to= "/" style={{ textDecoration: 'none' }}>WishList</Link> </li>
             
 
             
@@ -51,7 +54,7 @@ const Nav = ({user, setUser}) => {
         )}
         </div>
        
-        <Link to="/"  style={{ textDecoration: 'none' }}>wishlist <Heart size={19}  /></Link>
+        <Link to="/wish"  style={{ textDecoration: 'none' }}>wishlist <Heart size={19}  /></Link>
 
         
        
